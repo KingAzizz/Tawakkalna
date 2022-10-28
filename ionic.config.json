@@ -1,0 +1,7 @@
+{
+  "name": "tawakkalna",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
