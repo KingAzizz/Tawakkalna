@@ -1,3 +1,5 @@
+import { UserService } from './../user.service';
+import { User } from './../user.module';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,7 +8,11 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+  user:User[]
+  constructor(private userServices:UserService) {}
 
-  constructor() {}
+  ngOnInit(){
+    this.user = this.userServices.getUsers()
+  }
 
 }

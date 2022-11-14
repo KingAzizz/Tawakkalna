@@ -1,20 +1,70 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+  <ion-toolbar color="primary" style=" padding-top:30px;
+  padding-left: 20px;
+ border-radius: 0 0 25px 25px;">
+   <div  class="greeting">
+    <div>
+      Good Afternoon &nbsp;
+      <ion-label *ngFor="let u of user" style="text-transform:capitalize ;"> {{u.name}}</ion-label>
+      </div>
+      <div>
+        <img src="https://img.icons8.com/material-rounded/96/000000/certificate--v2.png" width="50px" style="color: gray;"/>
+      </div>
+    </div>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+<div class="top-row-icons">
+  <div>
+
+    <ion-icon name="calendar-outline" size="large"></ion-icon>
+    <ion-icon name="search-outline" size="large"></ion-icon>
   </div>
+  <div>
+
+    <ion-icon name="eye-outline" size="large"></ion-icon>
+    <!-- <ion-icon name="eye-off-outline" size="large"></ion-icon> -->
+    <ion-icon name="notifications-outline" size="large"></ion-icon>
+  </div>
+</div>
+
+<div class="id-card">
+  <ion-img *ngFor="let u of user" [src]="u.idCardImage"></ion-img>
+</div>
+
+<div class="top-services">
+  <div class="topServicesDisplayAll">
+    <p style="color:#2ca291; font-size: 1.3rem;">Top Services</p>
+   <p routerLink="../services" style="font-size: 1rem; color: #606368;">Display all <ion-icon style="position: relative; top: 7px; font-size: 25px; color: #6d7075;" name="chevron-forward-outline"></ion-icon></p>
+  </div>
+ 
+    <ion-grid>
+      <ion-row>
+        <ion-col>   
+          <div class="cardServices">
+          <p>Issue Permits</p>
+          <img src="../../assets/icon/kabba.png"  width="30px"/>
+        </div>
+      </ion-col>
+      <ion-col>   
+        <div class="cardServices">
+        <p>Ambulance Request</p>
+        <ion-icon name="medkit-outline" size="large" style="position: relative; top: 7px;" color="success"></ion-icon>
+      </div>
+    </ion-col>
+    <ion-col>   
+      <div class="cardServices">
+      <p>Issue Permits</p>
+      <img src="../../assets/icon/icons8-front-gate-open-60.png" width="30px"/>
+    </div>
+  </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+  <div>
+    <ion-img src="../../assets/ehsan.jpeg" style="padding: 10px; border-radius: 10px;"></ion-img>
+  </div>
+
 </ion-content>

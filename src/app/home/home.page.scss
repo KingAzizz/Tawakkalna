@@ -25,3 +25,41 @@
 #container a {
   text-decoration: none;
 }
+.greeting{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.greeting > div:first-child{
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.top-row-icons{
+display: flex;
+justify-content: space-between;
+padding: 15px;
+}
+
+.top-row-icons > div > ion-icon{
+  margin: 8px;
+  }
+
+  .id-card {
+    padding: 20px;
+  }
+
+  .topServicesDisplayAll{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px;
+  }
+
+  .cardServices{
+    display: flex;
+    padding: 10px;
+    font-size: .7rem;
+    border-radius: 7px;
+  }

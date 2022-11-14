@@ -1,0 +1,28 @@
+.container{
+    padding: 5px;
+    margin-top: 30px;
+}
+.box{
+    border-radius: 7px;
+    background-color: #1c1c1e;
+    padding: 23px;
+    text-align: center;
+    display: flex ;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    height: 126px;
+}
+ion-label{
+    position: relative;
+    top: 9px;
+
+}
+
+ion-grid{
+    margin-top: 20px;
+}
+ion-icon{
+    color: #0d8f75;
+    width: 100%;
+}
